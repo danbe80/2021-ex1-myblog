@@ -11,7 +11,7 @@ html, body {
 }
 .wrapper {
 	max-width: 1400px;
-	margin: 0 auto;
+	margin:auto;
 }
 
 /************* header ****************/
@@ -31,7 +31,7 @@ header p {
 	letter-spacing: -.3px;
 	margin: 10px;
 }
-p > span {
+header p > span {
 	background-color: #222;
 	color: #f1f1f1;
 	padding: 0 5px;
@@ -39,7 +39,6 @@ p > span {
 /************* main-wrapper ****************/
 .main-wrapper {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 2fr 1fr;
 }
 
@@ -96,6 +95,8 @@ h3 > span {
 	padding: 12px 24px;
 }
 .comment-wrap p > span {
+	background-color: #222;
+	color: #f1f1f1;
 	padding: 0 8px;
 	margin: 0 2px;
 }
@@ -146,4 +147,36 @@ h3 > span {
 .right-wrap .tags .tag:first-child{
 	background-color: #222;
 	color: #fff;
+}
+/************* footer-wrapper ****************/
+footer {
+	background-color: #555;
+	padding: 35px 20px;
+	margin-top: 26px;
+}
+footer button {
+	padding: 15px 25px;
+	margin-right: 2px;
+	margin-bottom: 20px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+}
+footer button:hover{
+	background-color: #ccc;
+	color: #000;
+	transition: all .35s;
+}
+footer .prev-btn {
+	cursor: not-allowed;
+	opacity: .3;
+}
+footer p {
+	margin-top: 26px;
+	color: #fff;
+}
+footer p a{
+	color: #fff;
+	text-decoration: underline;
 }

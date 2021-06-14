@@ -16,17 +16,16 @@ html, body {
 /************* header ****************/
 header{
 	text-align: center;
+	line-height: 1.5;
 }
 header h1 {
 	font-size: 35px;
 	font-weight: 500;
-	line-height: 2;
 	letter-spacing: -2px;
 	margin: 10px;
 }
 header p {
 	font-size: 14px;
-	line-height: 1;
 	letter-spacing: -.3px;
 	margin: 10px;
 }

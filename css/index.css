@@ -10,9 +10,8 @@ html, body {
 	margin: 0;
 }
 .wrapper {
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
-	border: 1px solid blue;
 }
 
 /************* header ****************/
@@ -37,39 +36,43 @@ p > span {
 	color: #f1f1f1;
 	padding: 0 5px;
 }
-/************* main wrapper ****************/
+/************* main-wrapper ****************/
 .main-wrapper {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 
-/************* left wrapper ****************/
-.left-wrap {
+/************* left-wrapper / right-wrapper ****************/
+.left-wrapper .left-wrap,
+.right-wrapper .right-wrap {
 	background-color: #fff;
 	box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3);
-	margin: 0 20px;
+	margin: 26px 15px;
 }
-.left-wrap img {
+.left-wrap img, .right-wrap img {
 	width: 100%;
 }
-.left-content{
+.left-content, .right-content{
 	margin: 16px;
 }
-.left-content h2 {
-	font-weight: bold;
+.left-content h2, .right-content h2 {
 	line-height: 1;
 }
-.left-content h3 {
+.left-content h3, .right-content h3 {
 	font-weight: 400;
 	font-size: 18px;
 }
 h3 > span {
 	color: #888;
 }
-.left-content p {
+.left-content p , .right-content p{
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: -.25px;
+}
+.right-content p {
+	padding-bottom: 20px;
 }
 .left-wrap .content-foot {
 	display: flex;
@@ -87,6 +90,7 @@ h3 > span {
 }
 .content-foot .btn-wrap button:hover {
 	background-color: #ccc;
+	transition: all .35s;
 }
 .content-foot .comment-wrap{
 	padding: 12px 24px;
@@ -95,4 +99,51 @@ h3 > span {
 	padding: 0 8px;
 	margin: 0 2px;
 }
-/************* right wrapper ****************/
+.right-wrap .title {
+	background-color: #f1f1f1;
+	padding: 5px 0;
+}
+.right-wrap .title h2{
+	font-size: 20px;
+	font-weight: 400;
+	padding: 0 10px;
+}
+.right-wrap ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.right-wrap .lists .list{
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	line-height: 1.5;
+}
+.right-wrap .lists .list:hover{
+	background-color: #ccc;
+	transition: all .35s;
+}
+.right-wrap .lists .list > img {
+	width: 50px;
+	margin: 0 16px;
+}
+.right-wrap .tags {
+	display: flex;
+	justify-content: stretch;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: flex-end;
+	padding: 20px 10px;
+}
+.right-wrap .tags .tag {
+	padding: 2px 10px;
+	margin: 8px 3px;
+	background-color: #f1f1f1;
+	
+}
+.right-wrap .tags .tag:first-child{
+	background-color: #222;
+	color: #fff;
+}

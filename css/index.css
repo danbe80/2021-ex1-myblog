@@ -151,7 +151,7 @@ h3 > span {
 /************* footer-wrapper ****************/
 footer {
 	background-color: #555;
-	padding: 35px 20px;
+	padding: 30px 20px;
 	margin-top: 26px;
 }
 footer button {
@@ -179,4 +179,21 @@ footer p {
 footer p a{
 	color: #fff;
 	text-decoration: underline;
+}
+
+
+/************* 반응형 ****************/
+
+@media screen and (max-width: 991px) {
+	.main-wrapper{
+		display: block;
+	}
+	.right-wrap .tags .tag{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 600px){
+	.comment-wrap p {
+		display: none;
+	}
 }
